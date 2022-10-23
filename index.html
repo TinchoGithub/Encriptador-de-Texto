@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de texto online">
+    <meta name="keywords" content="encriptador de texto, encriptador">
+    <meta name="author" content="Martín Perez">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="./img/code.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/c4b76b6bec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="titulo-container">
+            <h1 class="titulo">Encriptador de texto</h1>
+
+            <img class="logo" src="./img/code.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <div class="contenido-container">
+            <section>
+                <div class="contenido">
+                    <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+    
+                    <div class="botones">
+                        <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="resultado-container">
+                    <textarea class="resultado" cols="18" rows="8"></textarea>
+                
+                    <div class="boton-copiar">
+                        <button class="copiar" onclick="copiar()" >Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Diseñado y Desarrollado por Martín Perez</p>
+            <p>Copyright © 2022 MP</p>
+            <div class="footer__iconos">
+                <a href="https://github.com/TinchoGithub" target="_blank" class="iconos"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juan-martín-perez-902bb2199" target="_blank" class="iconos"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="http://www.instagram.com/_t_i_n_c_h_o_/" target="_blank" class="iconos"><i class="fa-brands fa-instagram" ></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

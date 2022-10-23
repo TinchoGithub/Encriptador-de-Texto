@@ -1,0 +1,300 @@
+:root{
+    --color-primario: rgb(14, 136, 236);
+}
+@font-face {
+    font-family: "primaria";
+    src: url(../fuentes/PressStart2P.ttf);
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(../fuentes/Cream\ Cake.otf);
+}
+
+body{
+    font-family: "primaria";
+}
+.titulo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 5rem;
+    background: var(--color-primario);
+    
+}
+
+.logo{
+    width: 60px;
+    height: auto;
+}
+
+.titulo{
+    font-family: "titulo";
+    font-size: 80px;
+    
+    color: orange ;
+    font-weight: bold;
+}
+body{
+    background: rgba(0, 0, 0, 0.795);
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    
+}
+
+.contenido-container{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.input-texto, .resultado{
+    
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--color-primario);
+    background: rgb(0, 0, 0, .60);
+    color: var(--color-primario) ;
+    padding: 1rem;
+    font-size: 20px;
+    
+   
+}
+
+.input-texto:focus, .resultado:focus{
+    background: rgb(0,0,0);
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+
+.boton-encriptar, .boton-desencriptar, .copiar{
+    background-color: rgb(14, 136, 236, .45);
+    width: 100px;
+    height: 40px;
+    border-radius:  8px;
+    border: none;
+    color: rgb(255, 255 ,255);
+
+}
+
+.boton-encriptar:hover{
+    background-color: var(--color-primario);
+    cursor: pointer;
+}
+
+.boton-desencriptar{
+    
+    background-color: rgb(255, 0, 0, .45);
+    
+}
+.boton-desencriptar:hover{
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.boton-copiar{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.copiar{
+    background: rgb(0, 128, 0, .45);
+}
+
+.copiar:hover{
+    background: rgb(0, 128, 0);
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    background: var(--color-primario);
+    color: orange;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    font-family: "titulo";
+    font-size: 30px;
+    font-weight: normal;
+    
+}
+
+.footer__iconos{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.iconos{
+    padding: 5px;
+    font-size: 40px;
+    color: orange;
+}
+
+.iconos:hover{
+    color: rgb(255, 255 ,255);
+
+}
+
+
+/* Responsive */
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+    
+     .titulo{
+         font-size: 40px;
+     }
+
+     .contenido-container{
+         flex-direction: column;
+         justify-content: center;
+         height: 667px;
+         
+        
+     }
+     .contenido{
+         margin-bottom: 3rem;
+     }
+
+     .input-texto, .resultado{
+         width: 250px;
+         height: 120px;
+         font-size: 14px;
+     }
+
+     .botones{
+         margin-top: 5px;
+     }
+
+     
+     .footer{
+         font-size: 24px ;
+         flex-direction: column-reverse;
+         height: 6rem;
+         padding: 1rem;
+        }
+
+     
+     
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .titulo{
+        font-size: 50px;
+    }
+
+    .contenido-container{
+        flex-direction: column;
+        justify-content: center;
+        height: 667px;
+        margin: 2rem 0 2rem 0;
+        
+       
+    }
+
+    .input-texto, .resultado{
+        width: 400px;
+        height: 200px;
+        font-size: 14px;
+    }
+
+    .contenido{
+        margin-bottom: 3rem;
+    }
+
+    .footer{
+        font-size: 22px;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+    .titulo{
+        font-size: 70px;
+    }
+    .input-texto, .resultado{
+        width: 600px;
+        height: 200px;
+        font-size: 14px;
+    }
+
+    .footer{
+        font-size: 25px;
+    }
+
+    
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .titulo{
+        
+        font-size: 80px;
+
+    }
+    .contenido{
+        margin-bottom: 0%;
+        
+    }
+
+    .contenido-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        height: 600px;
+        
+        
+       
+    }
+
+    .input-texto, .resultado{
+    
+        width: 400px;
+        height: 300px;
+        padding: 1rem;
+        font-size: 20px;
+        
+       
+    }
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    .input-texto, .resultado{
+    
+        width: 500px;
+        height: 300px;
+        padding: 1rem;
+       
+        
+       
+    }
+ } 
+
+
+
+
+
+
